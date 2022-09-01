@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #803bb8;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+    font-style: italic;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-size: 100vw;
+    background-image: url(img/pexels-pixabay-257894.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+}
+
+.container{
+    text-align: center;
+}
+
+.container .name h1{
+    font-size: 50px;
+}
+
+.container .name h5{
+    font-size: 20px;
+}
