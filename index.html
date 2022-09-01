@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script></script>
     <script src="https://kit.fontawesome.com/80101cb6c2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +15,7 @@
 </head>
 
 <body>
+    
     <header>
         <div>
             <img id="logo" src="img/logoport.png" alt="Logo: escrito Douglas Machado, seguido de sinal de maior e lupa e sinal de menor"></img>
@@ -39,11 +41,11 @@
                 <h1>Douglas Machado</h1>
                 <H5>Full-Stack Developer</H5>
             </div>
-            <div id="arrow">
-                <i class="fa-solid fa-arrow-turn-down"></i>
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-arrow-turn-down"></i>
             </div>
 
-            <div id="about">
+            <div style="display: none;" id="about">
                 <p>Estudante de Análise e Desenvolvimento de Sistemas, técnico em administração e auxiliar de TI. Atualmente encontro-me desempregado, já cursei biotecnologia e desisti no penúltimo semestre, embora ainda continue ainda sendo uma de minhas paixões,
                 Sempre fui curioso e desmontava coisas para arruma-las, atualmente faço reparos em computadores.</p>
             </div>
@@ -53,6 +55,15 @@
             <button>enviar!</button>
         </div>
     </main>
+
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
