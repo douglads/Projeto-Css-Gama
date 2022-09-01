@@ -22,11 +22,19 @@ body{
     background-position: center center fixed;
 }
 
+#logo{
+    max-width:40%;
+    max-height:40%;
+    width: auto;
+    height: auto;
+}
+
 header{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    box-shadow: 1px 1px 10px 1px #225345;
 }
 
 header ul{
@@ -37,12 +45,26 @@ header ul li{
     padding: 5px;
 }
 
+header ul li{
+    padding: 5px;
+}
+
+header ul li a{
+    transition: 500ms;
+}
+
+header ul li a:hover{
+    font-size: 20px;
+    color: #77a89a;
+}
+
 .container{
     text-align: center;
 }
 
 .container .name h1{
-    font-size: 50px;
+    font-size: 44px;
+    padding: 5px;
 }
 
 .container .name h5{
@@ -57,10 +79,30 @@ header ul li{
 
 .form input{
     width: 50%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .form button{
     width: 15%;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background: linear-gradient(to right, #225345 50%, #77a89a 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: -4px;
+    transition: all 500ms ease-out;
+}
+
+.form button:hover{
+    background-position: left bottom;
 }
 
 #about p{
