@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #803bb8;
+    color: #225345;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -20,6 +20,21 @@ body{
     background-image: url(img/pexels-pixabay-257894.jpg);
     background-repeat: no-repeat;
     background-position: center center fixed;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    padding: 5px;
 }
 
 .container{
